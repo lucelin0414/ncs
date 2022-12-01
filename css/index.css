@@ -1,0 +1,260 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'ONE-Mobile-POP';
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* 헤더 시작 */
+header{
+    width: 1200px;
+    height: 100px;
+}
+/* 로고 */
+.logo{
+    float: left;
+    width: 290px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 10px;
+}
+
+.logo>h1{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.logo>img{
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+/* 메뉴 */
+.menu{
+    float: right;
+    width: 900px;
+    height: 100px;
+}
+
+.navi{
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.navi>li{
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+
+.navi>li>a{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: black
+}
+
+.navi>li>a:hover{
+    color: gold;
+}
+
+.submenu{
+    margin-top: 30px;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    display: none;
+    z-index: 1;
+}
+
+.submenu>li{
+    line-height: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.submenu>li>a{
+    color: white;
+    font-size: 20px;
+}
+
+.submenu>li>a:hover{
+    color: gold;
+}
+
+/* 바디 시작 */
+#bodywrap{
+    width: 1200px;
+    height: 700px;
+}
+/* 이미지슬라이드 */
+.imgslide{
+    width: 100%;
+    height: 300px;
+}
+/* 컨텐츠 영역*/
+.content{
+    width: 100%;
+    height: 400px;
+}
+
+.content1{
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.content2{
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+/* 갤러리 */
+.gallery{
+    float: left;
+    width: 500px;
+    height: 400px;
+}
+
+.gallery>p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* 컨텐츠 */
+.content1{
+    float: right;
+    width: 700px;
+    height: 200px;
+}
+.content2{
+    float: right;
+    width: 700px;
+    height: 200px;
+}
+/* 푸터 시작 */
+footer{
+    width: 1200px;
+    height: 100px;
+    background-color: black
+}
+
+.ftcontent{
+    width: 100%;
+    height: 50px;
+}
+.ftmenu{
+    float: left;
+    width: 900px;
+    height: 50px;
+}
+
+.ftmenu li{
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    float: left;
+}
+
+.ftmenu li a{
+    color: white;
+}
+
+
+#ftlanguage{
+    margin-top: 10px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    float: right;
+    width: 200px;
+    height: 30px;
+}
+/* 카피라이트 */
+.copyright{
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* 레이어 팝업창(#modal) 배경 스타일 적용 */
+
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: none;
+}
+
+#modal.active{
+    display: block;
+}
+
+.modal_up{
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    background-color: #fff;
+}
+
+.uptitle{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upbody{
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.btn{
+    height: 25px;
+    width: 100px;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: #fabd43;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.btn:hover{
+    background-color: purple;
+    color: white;
+}
